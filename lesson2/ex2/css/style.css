@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    position: relative;
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+.box-main{
+    background-color: blue;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    
+}
+
+.subbox{
+    position: absolute;
+    
+}
+.subbox1{
+    background-color: yellow;
+    top: -5px;
+    left: -5px;
+}
+.subbox2{
+    background-color: green;
+    bottom: -5px;
+    right: -5px;
+}
