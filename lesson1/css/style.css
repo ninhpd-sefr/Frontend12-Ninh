@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background: url(../img/z3234075312432_5f84e5719d04e5c79e9f2f4b934eff29.jpg) no-repeat cover;
+}
+body{
+    
+}
+#header{
+    width: 1000px;
+    height: 40px;
+    background-color: green;
+    text-align: center;
+    margin:20px auto;
+}
+
+#header h1{
+    color: white;
+}
+
+#content{
+    padding: 10px;
+}
+
+#content h2{
+    color: blue;
+    font-size: 20px;
+}
+#footer{
+    background-color: yellow;
+    margin: 10px;
+}
+
+#footer h2{
+    color: blue;
+    font-size: 20px;
+
+}
