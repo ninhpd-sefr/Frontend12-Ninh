@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 500px;
+    height: 100px;
+    background-color: yellow;
+    margin: auto;
+    display: flex;
+    line-height: 100px;
+    justify-content: center;
+}
+
+
+i{
+    font-size: 50px;
+    transform: translateY(25%);
+}
+
+.first{
+    color: white;
+}
+
+.second{
+
+}
