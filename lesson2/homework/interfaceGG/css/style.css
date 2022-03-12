@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
+  
+  ol, ul ,li{
+    list-style: none;
+  }
+
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+  
+
+/* HEADER START */
+
+.header-menu a{
+  margin:0px 8px;
+  text-decoration: none;
+}
+
+#header{
+    min-height:45px ;
+    position: relative;
+}
+.header-menu{
+    margin-top: 14px;
+    position: absolute;
+    right: 14px;
+}
+.header-menu-list{
+    display: flex;
+    line-height: 30px;
+    height: 30px;
+}
+.header-menu-char{
+    display: flex;
+  }
+.header-menu-char a{
+  color: #303030;
+  font-size: 15px;
+
+}
+
+.header-menu-char a:hover{
+  text-decoration: underline;
+}
+.header-menu-icon{
+  height: 40px;
+  transform: translateY(-10%);
+  display: flex;
+  align-items: center;
+}
+
+
+.header-menu-icon li:first-child{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-icon li:first-child:hover{
+  background-color: #f0f0f0;
+}
+
+.header-menu-icon li:last-child{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-icon li:last-child:hover{
+  background-color: #f0f0f0;
+}
+
+.header-menu-icon .menu-img{
+  transform: translateY(14%);
+  width: 24px;
+}
+
+.header-menu-icon .menu-avata{
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(15%);
+}
+
+/* HEADER END */
+
+/* CONTENT START */
+
+#content{
+  width: 100%;
+  min-height: 280px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.content-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-img img{
+  width: 270px;
+  height: 80px;
+  margin: auto;
+}
+.content-input{
+  height: 42px;
+  border: 1px solid#e2e4e7;
+  border-radius: 25px;
+  width: 580px;
+  margin: 30px auto 36px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-input:hover{
+  box-shadow: 1px 1px 1px 2px rgb(214, 214, 214);
+}
+
+
+.content-input .input-text{
+  width: 470px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.content-input .input-text:hover{
+   
+}
+
+.search-input{
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  color: #c5c8cb;
+}
+
+.mic-input{
+  width: 24px;
+  position: absolute;
+  right: 10px;
+}
+
+.mic-input:hover{
+  cursor: pointer;
+}
+
+.content-btn{
+  height: 30px;
+  width: 300px;
+  margin: 0px auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-btn li{
+  width: 130px;
+  height: 35px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  
+}
+
+
+.content-btn li:hover{
+  border-radius: 4px;
+  border: 1px solid #c5c8cb;
+  box-shadow: 1px 1px 1px 1px 1px black;
+  cursor: pointer;
+}
+
+
+.content-btn li .btn{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+.content-language{
+  height: 30px;
+  width: 400px;
+  margin: 0px auto;
+  transform: translateX(15%);
+  display: flex;
+  align-items: center;
+}
+
+.content-language p{
+  font-size: 14px;
+}
+
+.content-language a{
+  padding: 5px;
+  text-decoration: none;
+  color: #746ccc;
+}
+
+.content-language a:hover{
+  text-decoration: underline;
+}
+
+
+/* CONTENT END */
+
+/* FOOTER START */
+
+#footer{
+  background-color: #f2f2f2;
+  height: 90px;
+}
+
+.footer-top{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c5c8cb ;
+}
+
+.footer-top p{
+  color: #808489;
+  margin-left: 28px;
+
+}
+
+.footer-bottom{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom-left{
+  margin-left: 28px;
+}
+
+.footer-bottom-left a{
+  margin-right: 28px;
+  text-decoration: none;
+  color: #808489;
+
+}
+
+.footer-bottom-right{
+  margin-right: 28px;
+}
+
+.footer-bottom-right a{
+  margin-left: 28px;
+  text-decoration: none;
+  color: #808489;
+}
+
+.footer-bottom a:hover{
+  text-decoration: underline;
+}
+
+
+/* Footer END */
