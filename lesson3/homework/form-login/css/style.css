@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrap{
+    height: 770px;
+    width: 100%;
+    padding: 20px;
+}
+
+#form-main{
+    border-radius: 10px;
+    height: 100%;
+    width: 970px;
+    margin: auto;
+    font-size: 0px;
+    padding: 30px ;
+    background-color: white;
+    box-shadow: 5px 10px 18px #888888;
+    
+}
+
+/* Left Start */
+
+.content-left{
+    height: 670px;
+    display: inline-block;
+    width: 40%;
+    font-size: 20px;
+    background: linear-gradient(to right,
+    #b78ce8, 
+    #6f5ccf);
+    color: white;
+    padding: 40px 120px 40px 40px;
+    border-radius: 5px 1px 1px 5px;
+}
+
+.intro-form-main{
+    
+}
+.intro-mark{
+    margin-bottom: 18px;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.1);;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.intro-mark i{
+    font-size: 12px;
+    transform: translateY(-15%);
+} 
+
+.intro-title{
+    margin-bottom: 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.intro-p{
+    font-size: 14px;
+    margin-bottom: 40px;
+    word-spacing: 1px;
+}
+
+
+
+/* Left End */
+
+/* Right Start */
+.content-right{
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.wrap-form{
+    padding: 80px 0px 0px 80px;
+}
+
+.title-right{
+    font-size: 30px;
+    font-weight: 580;
+    margin-bottom: 40px;
+}
+
+.form-login{
+
+}
+
+.form-group{
+
+}
+
+.form-title{
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.form-input{
+    margin-bottom: 30px;
+    padding: 18px;
+    border: 1px solid #dbdada;
+    width: 340px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-tick{
+    
+}
+
+.form-check{
+    display: inline-block;
+    width: 20px;
+}
+
+.form-tick p{
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    color: gray;
+}  
+
+.form-send{
+    margin-top: 35px;
+}
+
+.form-send input{
+    width: 75%;
+    background-color: #6e59ce;
+    border: none;
+    padding: 15px 0px;
+    font-size: 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
