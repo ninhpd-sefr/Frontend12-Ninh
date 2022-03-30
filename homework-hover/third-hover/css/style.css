@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
+.btn{
+    min-width: 50px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.firstBtn:hover{
+    background-color: #5a8aea;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+
+.secondBtn{
+    position: relative;
+}
+
+.secondBtn::after{
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    background-color: #5a8aea;
+    left: -2px;
+    bottom: -125%;
+    z-index: -1;
+}
+
+.secondBtn:hover::after{
+    left: -2px;
+    bottom: -5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.secondBtn:hover{
+    color: white;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.thirdBtn{
+    position: relative;
+}
+
+.thirdBtn::before{
+    content: "";
+    width: 150%;
+    height: 50%;
+    position: absolute;
+    background-color: #5a8aea;
+    left: -100%;
+    top: 100%;
+    transform: rotate(45deg);
+}
+
+.thirdBtn:hover::before{
+    left: 100%;
+    top: -100%;
+    transition: all 1s ease-in-out;
+}
+
+.thirdBtn::after{
+    content: "";
+    width: 150%;
+    height: 50%;
+    position: absolute;
+    background-color: yellow;
+    left: 100%;
+    top: -100%;
+    transform: rotate(45deg);
+}
+
+.thirdBtn:hover::after{
+    left: -100%;
+    top: 100%;
+    transition: all 1s ease-in-out;
+}
