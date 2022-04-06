@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33.3333%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:768px){
+    .box{
+        width: 50%;
+    }
+}
+
+@media (max-width:500px){
+    .box{
+        width: 100%;
+    }
+}
+
+
+

@@ -385,10 +385,8 @@ do eiusmod tempor.
                 $(document).ready(function(){
                     $(".accordion-item.active .accordion-body").slideDown();
                     $(".accordion-header").click(function(){
-                      $(this).parent().toggleClass("active").click(function(){
-                        $(this).children(".accordion-body").slideToggle();
-                        
-                      });
+                      $(this).parent().toggleClass("active");
+                      $(this).parent().children(".accordion-body").slideToggle();
                    })
                 })
             </script>

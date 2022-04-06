@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+
+
+@media (max-width: 768px) {
+    .laptop{
+        display: none;
+    }
+    body{
+        background-color: red;
+        transition: all 2s ease-in-out;
+    }
+}
+
+@media (max-width:536px) {
+    .ipad{
+        display: none;
+    }
+    body{
+        background-color: blueviolet;
+        transition: all 2s ease-in-out;
+    }
+}
