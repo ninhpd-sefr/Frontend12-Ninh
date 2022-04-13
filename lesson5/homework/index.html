@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/a5283cb531.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="httpgits://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5283cb531.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -17,8 +17,10 @@
     
     <div id="header">
         <img src="./img/monggo/mogo_image/hero.png" alt="">
+       
         <div class="header-wrap">
             <div class="header-nav">
+               
                 <div class="header-nav-left">
                     <h2>MoGo</h2>
                 </div>
@@ -35,7 +37,35 @@
 
                     </ul>
                 </div>
+                <label for="checkBox" class="header-nav-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" hidden id="checkBox" class="checkbox">
+
+                <label for="checkBox" class="header-nav-overlay">     
+                </label>
+
+                <div class="header_nav_mobile">
+                    <div class="mobile-header">
+                        <label for="checkBox" class="mobile-header-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+
+                    <div class="mobile-body">
+                        <ul class="header-mobile-list">
+                            <li><a href="" class="header-nav-item">ABOUT</a></li>
+                            <li><a href="" class="header-nav-item">SERVICE</a></li>
+                            <li><a href="" class="header-nav-item">WORK</a></li>
+                            <li><a href="" class="header-nav-item">BLOG</a></li>
+                            <li><a href="" class="header-nav-item">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
             </div>
+            
 
             <div class="header-title">
                 <h2 class="header-title-first">Creative Template</h2>
@@ -330,6 +360,7 @@ do eiusmod tempor.
 
                 <div class="content-services-main">
                     <div class="content-services-left">
+                        <img src="./img/monggo/mogo_image/whatwedo.png" alt="">
                     </div>
 
                     <div class="content-services-right">
