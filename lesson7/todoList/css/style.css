@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.table {
+    font-size: 1rem;
+}
+
+.SmallColor{
+    background-color: green;
+}
+
+.MediumColor{
+    background-color: gold;
+}
+
+.HighColor{
+    background-color: red;
+}
