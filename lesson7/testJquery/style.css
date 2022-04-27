@@ -1,0 +1,9 @@
+#accordion{
+    width: 500px;
+    margin: auto;
+}
+
+.ui-accordion-header{
+    background-color: orange;
+    color: white;
+}
