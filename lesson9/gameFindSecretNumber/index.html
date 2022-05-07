@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a5283cb531.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <title>Game guess number</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="layout-left">
+            <div class="layout-left-setting">
+                <a href="">Vietnamese</a>
+                <button class="offMusic"><i class="fa-solid fa-bell"></i></button>
+            </div>
+            <div class="layout-left-level color-lv1">
+                <h3>level 1</h3>
+            </div>
+
+            <div class="layout-left-function">
+                <button class="rules"><a href="#" title="
+                    Find the secret number in the given passage, you have 3 slots to play">Introduction <i
+                            class="fa-solid fa-circle-question"></i></a></button>
+                <button class="grades">Grades : 90</button>
+                <button class="playgame">Play game</button>
+            </div>
+
+
+            <div class="layout-left-share">
+                <div class="share-wrap">
+                    <button class="share"><a target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
+                    </button>
+                    <div class="layout-left-socials">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+                <div class="layout-left-ads">
+                    <button onclick="playAds()"><img src="./img/images-removebg-preview.png" alt=""></button>
+                    <p>Watch ADS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-center">
+            <div class="layout-center-title">
+                <h1>Number Guessing Game !!!</h1>
+            </div>
+            <div class="layout-center-top">
+
+                <div class="layout-center-list">
+
+
+                </div>
+
+                <div class="layout-center-function">
+                    <div class="layout-center-suggest">
+                        <i class="fa-solid fa-lightbulb ideaBtn"></i>
+                    </div>
+
+                    <div class="layout-center-undo" onclick="rePlaygame()">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+
+                    <div class="layout-center-zoom">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="layout-center-choosed-title">Number choosed</div>
+            <div class="layout-center-choosed">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <div class="layout-center-control">
+                <div class="layout-center-control-pre"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="layout-center-control-pause"><i class="fa-solid fa-circle-pause"></i></div>
+                <div class="layout-center-control-next"><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+
+            
+        </div>
+
+
+        <div class="layout-right">
+            <div class="layout-right-slot">
+                <div class="layout-right-slot-title">Your property</div>
+                <div class="layout-right-slot-remain">
+                    <i class="fa-solid fa-heart slotRemain"></i>
+                    <i class="fa-solid fa-heart slotRemain"></i>
+                    <i class="fa-solid fa-heart slotRemain"></i>
+                </div>
+            </div>
+
+            <div class="layout-right-intro">
+
+                <div class="layout-right-instructor">
+                    <img src="./img/instructor.png" alt="">
+                </div>
+
+                <div class="layout-right-intro-mess">
+                    If you understand the rules of the game, click play game, if not, choose introduction
+                </div>
+
+            </div>
+
+            <div class="video-ads video-ads-none">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/deu0b7nqe5I"
+                    allow="autoplay"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <audio id="myAudio">
+        <source src="https://www.computerhope.com/jargon/m/example.mp3" />
+        <!-- <source src="./img/Nhac-phim-hoat-hinh-Doremon-Khong-biet.mp3" type="audio/ogg">
+        <source src="./img/Nhac-phim-hoat-hinh-Doremon-Khong-biet.mp3" type="audio/mpeg"> -->
+    </audio>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

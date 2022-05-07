@@ -19,3 +19,7 @@ body {
 .HighColor{
     background-color: red;
 }
+
+.form-input{
+    display: none;
+}

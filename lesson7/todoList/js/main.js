@@ -12,7 +12,7 @@ function processList(){
     } 
 
     let tasksId = btnSubmit.getAttribute("id");
-    var task = {name : nameToDo.value, level : taskLevel.value}
+    var task = {name : nameToDo.value, level : taskLevel.value,id: generateString(7)}
     let tasks = getTaskByLocalStorage();
     if(tasksId == 0 || tasksId){
         tasks[tasksId] = task
@@ -30,23 +30,43 @@ function getTaskByLocalStorage(){
     return localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")) : [];
 }
 
-function editTasks(id){
-    let tasks = getTaskByLocalStorage();
+function generateString(length) {
+    let result = ' ';
+    const characters ='0123456789';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
 
-    if(tasks.length >= 0){
-        nameToDo.value = tasks[id].name
-        btnSubmit.setAttribute("id", id);
+    return result;
+}
+
+
+function editTasks(idIndex){
+    let tasks = getTaskByLocalStorage();
+    for(let i = 0; i < tasks.length; i++){
+        if(tasks[i].id == idIndex){
+            if(tasks.length >= 0){
+                nameToDo.value = tasks[i].name
+                btnSubmit.setAttribute("id", i);
+            }
+        }
     }
 }
 
 
-function deleteTasks(id){
-    if(confirm("Do you want to delete")){
-        let tasks = getTaskByLocalStorage();
-        tasks.splice(id, 1);
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-        renderTasks(tasks)
+function deleteTasks(idIndex){
+    let tasks = getTaskByLocalStorage();
+    for(let i = 0; i < tasks.length; i++){
+        if(tasks[i].id == idIndex){             
+            if(confirm("Do you want to delete")){
+                tasks.splice(i, 1);
+                localStorage.setItem("tasks", JSON.stringify(tasks));
+                renderTasks(tasks)
+            }
+        }
     }
+ 
 }
 
 
@@ -57,15 +77,31 @@ function renderTasks(tasks = []){
         content += 
         `
         <tr>
-        <td>1</th>
+        <td>${index+1}</th>
         <td>${task.name}</td>
         <td><span class="badge  ${task.level}Color">${task.level}</span></td>
         <td>
-            <button class="btn btn-warning" onclick = "editTasks(${index})">Edit</button>
-            <button class="btn btn-danger" onclick = "deleteTasks(${index})">Delete</button>
+            <button class="btn btn-warning" onclick = "editTasks(${task.id})">Edit</button>
+            <button class="btn btn-danger" onclick = "deleteTasks(${task.id})">Delete</button>
         </td>
     </tr>
         `
     })
     document.getElementById("area-list-task").innerHTML = content
+}
+
+let btnAddTask = document.querySelector(".btn-open-form-input");
+
+var formInput = document.querySelector(".form-input")
+btnAddTask.onclick = function(){
+    formInput.style.display = "block";
+}
+
+var btnClear = document.querySelector(".btn-clear");
+btnClear.onclick = function(){
+    if(nameToDo.value != ""){
+        nameToDo.value = ""
+    } else {
+        formInput.style.display = "none";
+    }
 }
