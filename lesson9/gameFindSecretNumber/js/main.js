@@ -27,14 +27,20 @@ offMucsic.onclick = function () {
 function rePlaygame() {
     localStorage.removeItem("NumberChoosed");
     location.reload();
+    document.querySelector(".layout-center-choosed").innerHTML = "";
+
 }
 // click play game
 playGame.onclick = function () {
     localStorage.removeItem("NumberChoosed");
     layoutCenter.style.display = "block";
+    document.getElementById("myImageId").src="./img/instructor.png"
     introMess.innerHTML = "let's find the secret number"
+    document.querySelector(".layout-center-choosed").innerHTML = "";
+    count = 0;
     getGrades(3);
     slotPlay(3);
+
 }
 
 renderLevel("level 1");
@@ -142,11 +148,14 @@ chechTrueFalse();
 // if user choose correct
 function congratu() {
     introMess.innerHTML = "congratulation !!!!!"
+    document.getElementById("myImageId").src="./img/congratulation.png"
+    document.getElementById("myImageId").style.width = 500 +"px"
 }
 
 // if user choose incorrect
 function tryagain(number) {
     introMess.innerHTML = "Let's try again"
+    document.getElementById("myImageId").src="./img/imgbin-nobita-nobi-doraemon-desktop-fujiko-fujio-doraemon-characters-PyahwNQjc7cwrWfgNMJ1s6PDK_t-removebg-preview.png"
     var choosedNumber = getNumberFromLocal();
     choosedNumber.push(number);
     localStorage.setItem("NumberChoosed", JSON.stringify(choosedNumber));
@@ -204,15 +213,14 @@ function getSlotFromLocal() {
 
 // watch ads
 var videoAds = document.querySelector(".video-ads");
-let flagAds = false;
 function playAds(){
     videoAds.classList.toggle("video-ads-none");
     setTimeout(function () {
         videoAds.classList.toggle("video-ads-none");
         videoAds.innerHTML = ""
     }, 10000)
-    flagAds = true;
-    return flagAds
+    count+=1;
+    
 }
 
 

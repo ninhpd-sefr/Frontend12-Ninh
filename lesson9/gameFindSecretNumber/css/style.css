@@ -23,6 +23,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
     max-width: 1200px;
     margin: auto;
     display: flex;
+    justify-content: center;
 }
 .layout-left{
     width: 30%;
@@ -166,6 +167,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
 .layout-left-ads img{
     width: 50px;
     transition: 0.3s;
+    animation-name: example;
 }
 
 .layout-left-ads button{
@@ -337,7 +339,12 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
     font-weight: 600;
 }
 .layout-right-instructor{
+    width: 300px;
+}
 
+.layout-right-instructor img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .video-ads{
