@@ -52,15 +52,20 @@ nextBtn.onclick = function () {
     if (levelDefault < 3) {
         levelDefault += 1;
         let levelResult = '';
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault-1}`);
         levelResult = `level ${levelDefault}`
         levelPlay.innerHTML = levelResult;
         renderLevel(levelPlay.innerHTML);
+        handleZoom();
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault}`);
     } else {
         levelDefault = 1;
         let levelResult = '';
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv3`);
         levelResult = `level ${levelDefault}`
         levelPlay.innerHTML = levelResult;
         renderLevel(levelPlay.innerHTML);
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault}`);
     }
 }
 // relevel btn
@@ -68,16 +73,20 @@ const prevBtn = document.querySelector(".fa-backward-step");
 prevBtn.onclick = function () {
     if (levelDefault > 1) {
         levelDefault -= 1;
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault+1}`);
         let levelResult = '';
         levelResult = `level ${levelDefault}`
         levelPlay.innerHTML = levelResult;
         renderLevel(levelPlay.innerHTML);
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault}`);
     } else {
         levelDefault = 3;
         let levelResult = '';
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv1`);
         levelResult = `level ${levelDefault}`
         levelPlay.innerHTML = levelResult;
         renderLevel(levelPlay.innerHTML);
+        document.querySelector(".layout-left-level").classList.toggle(`color-lv${levelDefault}`);
     }
 }
 
@@ -201,14 +210,9 @@ function getGrades(number) {
     grades.innerHTML = `Grades : ${number * 30}`
 }
 
-// get local
-function getNumberFromLocal() {
-    return localStorage.getItem('NumberChoosed') ? JSON.parse(localStorage.getItem('NumberChoosed')) : [];
-}
 
-function getSlotFromLocal() {
-    return localStorage.getItem('slot') ? JSON.parse(localStorage.getItem('slot')) : [];
-}
+
+
 
 
 // watch ads
@@ -219,12 +223,31 @@ function playAds(){
         videoAds.classList.toggle("video-ads-none");
         videoAds.innerHTML = ""
     }, 10000)
-    count+=1;
-    
 }
 
 
+// zoom fontsize
 
+let zoomSize = 15;
+function handleZoom(){
+    zoomSize += 3;
+    let itemBoxs = document.querySelectorAll(".layout-center-item");
+    itemBoxs.forEach(itemBox =>{
+        if(zoomSize <= 40){
+            itemBox.style.fontSize = `${zoomSize}px`;
+        }
+    })
+    
+}
+
+// get local
+function getNumberFromLocal() {
+    return localStorage.getItem('NumberChoosed') ? JSON.parse(localStorage.getItem('NumberChoosed')) : [];
+}
+
+function getSlotFromLocal() {
+    return localStorage.getItem('slot') ? JSON.parse(localStorage.getItem('slot')) : [];
+}
 
 
 // jquery

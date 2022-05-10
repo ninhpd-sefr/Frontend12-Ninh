@@ -222,6 +222,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
 .layout-center-item{
     width: 9%;
     height: 45px;
+    font-size: 15px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
