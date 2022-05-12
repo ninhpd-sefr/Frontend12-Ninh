@@ -35,6 +35,7 @@ playGame.onclick = function () {
     localStorage.removeItem("NumberChoosed");
     layoutCenter.style.display = "block";
     document.getElementById("myImageId").src="./img/instructor.png"
+    document.getElementById("myImageId").style.width = "250px"
     introMess.innerHTML = "let's find the secret number"
     document.querySelector(".layout-center-choosed").innerHTML = "";
     count = 0;
@@ -186,10 +187,13 @@ function renderChoosedNumber(numbers) {
 function slotPlay(number) {
     let slotPLayElem = "";
     for (let i = 1; i <= number; i++) {
-        slotPLayElem += `<i class="fa-solid fa-heart slotRemain"></i>`
+        slotPLayElem += `<i class="fa-solid fa-heart slotRemain"></i> `
     }
+
+
     document.querySelector(".layout-right-slot-remain").innerHTML = slotPLayElem;
 }
+
 
 // get suggestion
 const ideaBtn = document.querySelector(".ideaBtn");
@@ -209,10 +213,6 @@ var grades = document.querySelector(".grades")
 function getGrades(number) {
     grades.innerHTML = `Grades : ${number * 30}`
 }
-
-
-
-
 
 
 // watch ads
@@ -239,6 +239,7 @@ function handleZoom(){
     })
     
 }
+
 
 // get local
 function getNumberFromLocal() {
