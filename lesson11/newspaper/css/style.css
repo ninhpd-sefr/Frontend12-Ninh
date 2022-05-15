@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.none{
+    display: none !important;
+}
+#wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#header{
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+#header h1{
+    font-size: 50px;
+
+}
+
+#content{
+    width: 800px;
+    margin: auto;
+}
+
+
+.contentFunction{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+.contentFunctionItem{
+    display: flex;
+    padding: 10px;
+    background-color: red;
+    border-radius: 20px;
+    justify-content: center;
+    border: 3px solid #550000;
+    align-items: center; 
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.btn-font:hover,
+.btn-copy:hover,
+.btn-color:hover,
+.btn-dark:hover{
+    border: 3px solid red;
+    opacity: 0.7;
+}
+
+.btn-color{
+    position: relative;
+}
+
+.color-list {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    right: 40%;
+    border: 2px solid;
+
+}
+
+.color-list li{ 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.redColor{
+    background-color: red;
+}
+.blueColor{
+    background-color: blue;
+}
+.yellowColor{
+    background-color: yellow;
+}
+.greenColor{
+    background-color: green;
+}
+.grayColor{
+    background-color: gray;
+}
+.pinkColor{
+    background-color: pink;
+}
+
+.contentFunctionItem p{
+    margin-right: 5px;
+}
+
+.contentNews{
+    margin-top: 25px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    padding: 10px 20px;
+}
+
+.contentNews p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
