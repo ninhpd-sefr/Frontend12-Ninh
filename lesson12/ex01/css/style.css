@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#header{
+}
+
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.nav-item:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#content{
+    margin: auto;
+    min-height: 200px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}

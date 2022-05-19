@@ -1,0 +1,21 @@
+table, th, td{
+    border:1px solid black;
+}
+table{
+    border-collapse:collapse;
+    margin: auto;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+th, td{
+    min-width: 300px;
+    text-align: center;
+}
+
+.name{
+    min-width: 600px;
+}

@@ -38,8 +38,7 @@ btnFont.onclick = function(){
 
 // copy 
 
-
 btnCopy.onclick = function(){
-        navigator.clipboard.writeText(text.textContent);
+        navigator.clipboard.writeText(text.innerText);
         alert("copied")
 }
